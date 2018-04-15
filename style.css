@@ -7,39 +7,55 @@ Template: college-education
 Version: 1.0
 */
 /* Import Parent Theme */
-@import url('../college-education/style.css');
+@import url("../college-education/style.css");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+/* line 1, sass/_base.scss */
+blockquote {
+  font-family: 'Pacifico', cursive;
+  color: teal;
+  font-size: 36px;
+  line-height: 54px;
+  border: none;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* line 8, sass/_base.scss */
+.header-top .container {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /* featured image */
+/* line 2, sass/_header.scss */
 .featured-image {
-	position: absolute;
-	margin-bottom: 1040px;
-
-}
-blockquote {
-	font-family: 'Pacifico', cursive;
-	color: teal;
-	font-size: 36px;
-	line-height: 54px;
-	border: none;
+  position: absolute;
+  margin-bottom: 1040px;
 }
 
-
-
+/* line 1, sass/_quote.scss */
 .scroll_target_class .scroll_text_class {
-    bottom: 0px;
-    
+  bottom: 0px;
 }
+
+/* line 5, sass/_quote.scss */
 .scroll_target_class .scroll_text_class blockquote {
-    border: none;
-    margin-bottom: 0px;
-    background-color: rgba(120, 120, 120, .5); 
+  border: none;
+  margin-bottom: 0px;
+  background-color: rgba(120, 120, 120, 0.5);
 }
 
+/* line 11, sass/_quote.scss */
 .scroll_target_class .scroll_text_class blockquote p {
-    color: white;
-	font-size: 24px;
-	line-height: 30px;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+}
 
+/* line 2, sass/_template-mission-style.scss */
+body.page-template-mission-style header .container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 7, sass/_template-mission-style.scss */
+body.page-template-mission-style header + div.container {
+  padding-top: 1040px;
 }

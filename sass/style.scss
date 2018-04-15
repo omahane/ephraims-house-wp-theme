@@ -1,0 +1,17 @@
+/*
+Theme Name: Ephraim's House
+Description: Child Theme of College Education for Ephraim's House
+Author: Christian Burk
+Author URI: http://skyriter.com
+Template: college-education
+Version: 1.0
+*/
+/* Import Parent Theme */
+@import url('../college-education/style.css');
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@import "base";
+@import "header";
+@import "quote";
+@import "template-mission-style";
