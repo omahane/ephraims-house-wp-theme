@@ -1,6 +1,44 @@
+.header-top .container {
+  background-color: rgba(0, 0, 0, .3);
+}
+
 /* featured image */
 .featured-image {
   position: absolute;
   margin-bottom: 1040px;
 
 }
+#featured-image-headline {
+  position: absolute;
+  top: 140px;
+  z-index: 1000;
+  font-size: 48px;
+  font-family: Pacifico, cursive;
+  color: white;
+  align-items: center;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+#featured-image-quote {
+  position: absolute ;
+  top: 1000px;
+  color: white;
+  display: block ;
+  width: 100%;
+  text-align: center ;
+}
+
+#featured-image-author {
+  position: absolute;
+  top: 1040px;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#featured-image-author:before, #featured-image-author:after {
+  content: ' ~ ';
+}
+

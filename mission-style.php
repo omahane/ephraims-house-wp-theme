@@ -2,7 +2,7 @@
 /**
 * Template Name: Mission Style
 **/
-get_header();
+get_header('mission');
 ?>
     <div class="container">
         <div class="row">         
@@ -18,4 +18,4 @@ get_header();
             </div>            
         </div>
     </div>
-<?php get_footer(); ?>
+<?php get_footer('mission'); ?>

@@ -11,6 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />   
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
+    <script type="text/javascript">
+        function colorSpot(imgFile)
+        {
+            document.images.brain.src = imgFile;
+        }
+
+        function backToNormal( )
+        {
+            document.images.brain.src = "http://ephraims-house.local/wp-content/uploads/2018/06/adaptive-art-brain-600.png";
+        }
+    </script>
 </head>
 <body <?php body_class();?>> 
     <?php if(get_theme_mod('preloader') != 2) :
@@ -72,12 +83,5 @@
                 </div>
             </div>
         </div>
-
-        <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
-            <script>console.log("here's the thunbnail");</script>
-                <div class="featured-image">
-                    <?php the_post_thumbnail(); ?>
-                </div>
-        <?php } ?>
     </header>
     <?php endif; ?>

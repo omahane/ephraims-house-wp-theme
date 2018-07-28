@@ -1,11 +1,108 @@
 body.page-template-mission-style {
+  ////////////// HEADER & NAV ///////////////
+
+  // removing white space on the top
+  .blog-article {
+    padding-top: 0;
+  }
+
   header .container {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  header + div.container {
-    padding-top:1040px;
+  //header + div.container {
+  //  padding-top:1200px;
+  //}
+
+  ////////////// HERO ///////////////
+  // making it easier to see the headline
+  .so-widget-sow-hero {
+    margin-bottom: 30px;
+  }
+  .so-widget-sow-hero-default-b19262f89405 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+    text-shadow: 1px 1px 2px black;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+
+     h1 {
+       font-size: 60px;
+       padding-bottom: 80%;
+       color: white;
+    }
+    p {
+      font-size: 30px;
+      line-height: 130%;
+    }
+  }
+
+
+
+  ////////////// CHECKERBOARD BODY ///////////////
+  .checker.panel-row-style {
+    display: flex;
+    align-items: center !important;
+    background-color: $offWhite;
+
+    .panel-grid-cell {
+      display: flex;
+      justify-content: center;
+      width: 50% !important;
+
+      .widget_sow-editor {
+        width: 75%;
+
+        h1 {
+          color: $teal;
+          font-family: $pacifico;
+
+        }
+
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  ////////////// PROGRAM-SPECIFIC ///////////////
+  .program.panel-row-style {
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      font-family: $sansSerif;
+      font-weight: $bold;
+      margin: 0;
+    }
+    h3 {
+      font-family: $sansSerif;
+      font-weight: $semiBold;
+      color: grey;
+      font-size: 18px;
+      margin: 0;
+
+    }
+    a {
+      color: $brightBlue;
+      text-decoration: underline;
+      display: block;
+      margin-top: 10px;
+
+      &:hover {
+        color: $teal;
+        //font-weight: $semiBold;
+      }
+      &:after {
+        content: " \00BB";
+      }
+
+    }
+
   }
 
 }

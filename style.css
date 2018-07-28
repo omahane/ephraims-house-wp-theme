@@ -6,56 +6,183 @@ Author URI: http://skyriter.com
 Template: college-education
 Version: 1.0
 */
-/* Import Parent Theme */
+/* Parent Theme */
 @import url("../college-education/style.css");
+/* Bootstrap SASS */
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-/* line 1, sass/_base.scss */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,700,800");
+/* line 18, sass/_base.scss */
 blockquote {
-  font-family: 'Pacifico', cursive;
-  color: teal;
+  font-family: Pacifico, cursive;
+  color: #1287B2;
   font-size: 36px;
   line-height: 54px;
   border: none;
 }
 
-/* line 8, sass/_base.scss */
+/* line 1, sass/_header.scss */
 .header-top .container {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* featured image */
-/* line 2, sass/_header.scss */
+/* line 6, sass/_header.scss */
 .featured-image {
   position: absolute;
   margin-bottom: 1040px;
 }
 
-/* line 1, sass/_quote.scss */
-.scroll_target_class .scroll_text_class {
-  bottom: 0px;
-}
-
-/* line 5, sass/_quote.scss */
-.scroll_target_class .scroll_text_class blockquote {
-  border: none;
-  margin-bottom: 0px;
-  background-color: rgba(120, 120, 120, 0.5);
-}
-
-/* line 11, sass/_quote.scss */
-.scroll_target_class .scroll_text_class blockquote p {
+/* line 11, sass/_header.scss */
+#featured-image-headline {
+  position: absolute;
+  top: 140px;
+  z-index: 1000;
+  font-size: 48px;
+  font-family: Pacifico, cursive;
   color: white;
-  font-size: 24px;
-  line-height: 30px;
+  align-items: center;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
-/* line 2, sass/_template-mission-style.scss */
+/* line 24, sass/_header.scss */
+#featured-image-quote {
+  position: absolute;
+  top: 1000px;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 33, sass/_header.scss */
+#featured-image-author {
+  position: absolute;
+  top: 1040px;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 41, sass/_header.scss */
+#featured-image-author:before, #featured-image-author:after {
+  content: ' ~ ';
+}
+
+/* line 5, sass/_template-mission-style.scss */
+body.page-template-mission-style .blog-article {
+  padding-top: 0;
+}
+/* line 9, sass/_template-mission-style.scss */
 body.page-template-mission-style header .container {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 7, sass/_template-mission-style.scss */
-body.page-template-mission-style header + div.container {
-  padding-top: 1040px;
+/* line 20, sass/_template-mission-style.scss */
+body.page-template-mission-style .so-widget-sow-hero {
+  margin-bottom: 30px;
+}
+/* line 23, sass/_template-mission-style.scss */
+body.page-template-mission-style .so-widget-sow-hero-default-b19262f89405 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+  text-shadow: 1px 1px 2px black;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+}
+/* line 32, sass/_template-mission-style.scss */
+body.page-template-mission-style .so-widget-sow-hero-default-b19262f89405 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h1 {
+  font-size: 60px;
+  padding-bottom: 80%;
+  color: white;
+}
+/* line 37, sass/_template-mission-style.scss */
+body.page-template-mission-style .so-widget-sow-hero-default-b19262f89405 .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper p {
+  font-size: 30px;
+  line-height: 130%;
+}
+/* line 46, sass/_template-mission-style.scss */
+body.page-template-mission-style .checker.panel-row-style {
+  display: flex;
+  align-items: center !important;
+  background-color: #F8F8F8;
+}
+/* line 51, sass/_template-mission-style.scss */
+body.page-template-mission-style .checker.panel-row-style .panel-grid-cell {
+  display: flex;
+  justify-content: center;
+  width: 50% !important;
+}
+/* line 56, sass/_template-mission-style.scss */
+body.page-template-mission-style .checker.panel-row-style .panel-grid-cell .widget_sow-editor {
+  width: 75%;
+}
+/* line 59, sass/_template-mission-style.scss */
+body.page-template-mission-style .checker.panel-row-style .panel-grid-cell .widget_sow-editor h1 {
+  color: #1287B2;
+  font-family: Pacifico, cursive;
+}
+/* line 65, sass/_template-mission-style.scss */
+body.page-template-mission-style .checker.panel-row-style .panel-grid-cell .widget_sow-editor p {
+  line-height: 20px;
+}
+/* line 74, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style h1 {
+  margin: 0;
+}
+/* line 77, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+/* line 82, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: grey;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 90, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style a {
+  color: #00BBFF;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+}
+/* line 96, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style a:hover {
+  color: #1287B2;
+}
+/* line 100, sass/_template-mission-style.scss */
+body.page-template-mission-style .program.panel-row-style a:after {
+  content: " \00BB";
+}
+
+/* line 1, sass/_quote.scss */
+.scroll_target_class .scroll_text_class {
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 6, sass/_quote.scss */
+.scroll_target_class .scroll_text_class blockquote {
+  border: none;
+  margin-bottom: 0;
+  background-color: rgba(18, 135, 178, 0.5);
+}
+
+/* line 12, sass/_quote.scss */
+.scroll_target_class .scroll_text_class blockquote p {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  line-height: 30px;
 }
