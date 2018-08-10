@@ -12,7 +12,7 @@ Version: 1.0
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:600,700,800");
-/* line 18, sass/_base.scss */
+/* line 19, sass/_base.scss */
 blockquote {
   font-family: Pacifico, cursive;
   color: #1287B2;
@@ -34,7 +34,7 @@ blockquote {
 }
 
 /* line 11, sass/_header.scss */
-#featured-image-headline {
+#featured-image-headline, .header-style blockquote {
   position: absolute;
   top: 140px;
   z-index: 1000;

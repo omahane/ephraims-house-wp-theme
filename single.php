@@ -35,7 +35,7 @@ get_header();
                         <div class="single-blog-content-area fadeIn animated">
                             <div class="single-blog-content">
                                 <div class="title-data fadeIn animated">
-                                    <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                                   
                                     <?php if(get_theme_mod('blogSingleMetaTag',1) == 1): ?>
                                           <div class="single-post-meta">
                                             <?php college_education_tag_meta(); ?>
@@ -53,7 +53,7 @@ get_header();
                         </div>
                         <?php 
                         the_post_navigation( array(
-                        'prev_text'          => '<i class="fa fa-arrow-left" aria-hidden="true"></i>'.esc_html__('Prevoius Post ', 'college-education' ),
+                        'prev_text'          => '<i class="fa fa-arrow-left" aria-hidden="true"></i>'.esc_html__('Previous Post ', 'college-education' ),
                         'next_text'          => esc_html__( 'Next Post ', 'college-education' ) .'<i class="fa fa-arrow-right" aria-hidden="true"></i>',
                         'before_page_number' => '<span class="meta-nav screen-reader-text">'.esc_html__(' Page ', 'college-education' ).'</span>',
                         ) );
