@@ -72,6 +72,13 @@ blockquote {
   content: ' ~ ';
 }
 
+/* line 45, sass/_header.scss */
+.header-style blockquote {
+  font-size: 55px;
+  padding: 130px 0 60px;
+  line-height: 55px;
+}
+
 /* line 5, sass/_template-mission-style.scss */
 body.page-template-mission-style .blog-article {
   padding-top: 0;
