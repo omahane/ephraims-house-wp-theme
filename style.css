@@ -79,6 +79,21 @@ blockquote {
   line-height: 70px;
 }
 
+/* line 51, sass/_header.scss */
+img.custom-logo {
+  max-height: 90px !important;
+}
+
+/* line 54, sass/_header.scss */
+.header-top .logo {
+  display: flex;
+  align-items: center;
+}
+/* line 58, sass/_header.scss */
+.header-top .logo h4 {
+  font-family: Oxygen, sans-serif;
+}
+
 /* line 5, sass/_template-mission-style.scss */
 body.page-template-mission-style .blog-article {
   padding-top: 0;
@@ -192,4 +207,22 @@ body.page-template-mission-style .program.panel-row-style a:after {
   text-shadow: 1px 1px 2px black;
   font-size: 20px;
   line-height: 30px;
+}
+
+/* line 1, sass/_gallery.scss */
+.square-gallery .gallery {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+/* line 8, sass/_gallery.scss */
+.square-gallery .gallery .gallery-item {
+  padding: 0;
+  margin: 0;
+}
+/* line 12, sass/_gallery.scss */
+.square-gallery .gallery .gallery-item img.attachment-thumbnail.size-thumbnail {
+  min-width: 200px;
 }

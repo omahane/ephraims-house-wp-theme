@@ -1,5 +1,31 @@
-.header-top .container {
-  background-color: rgba(0, 0, 0, .3);
+.header-top.transparent .container, .header-top.transparent.fixed-header .container {
+  background-color: rgba(103,202,239,.3);
+}
+@media all and (min-width: 1024px){
+	.header-top.transparent nav, .header-top.transparent.fixed-header nav {
+		display: flex;
+		
+		.mob_nav {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		}
+		a#brand {
+			margin-left: 10px;
+			
+			span.site-title {
+				color: #000;
+			}
+		}
+	}
+}
+.header-top .logo {
+	display: flex;
+	align-items: center;
+	
+	h4 {
+		font-family: Oxygen, sans-serif;	
+	}
 }
 
 /* featured image */
@@ -43,7 +69,73 @@
 }
 
 .header-style blockquote {
-font-size: 55px;
-padding: 130px 0 60px;
-line-height: 70px;
+	font-size: 55px;
+	padding: 130px 0 60px;
+	line-height: 70px;
 }
+
+img.custom-logo { 
+	max-height: 90px !important;   
+}
+.footer-box .footer-widget ul li a,.footer-widget .tagcloud a{
+	color:#ffffff !important;
+	background-color:#67CAEF !important;
+}
+.footer-box .footer-widget ul li a:hover, .footer-widget .tagcloud a:hover{
+	color:#ffffff !important;
+	background-color:#67CAEF !important;
+}
+#menu-style ul ul li a:hover {
+        background-color: #67CAEF !important;
+      }      
+
+@media only screen and (max-width: 1024px){
+        
+      /*all menu arrow border color*/
+      #menu-style #menu-button::before,#menu-style .menu-opened::after
+        {
+           border-color: #ffffff;
+        }
+
+      /*all menu scroll arrow border color*/
+      .fixed-header #menu-style #menu-button::before, .fixed-header #menu-style .menu-opened::after{
+           border-color: #000 ;
+        }
+
+      /*all menu arrow background border color*/      
+      #menu-style #menu-button::after{
+          background-color: #ffffff;
+        }
+
+      /*all menu scroll arrow background border color*/      
+      .fixed-header #menu-style #menu-button::after {
+          background-color: #000;
+        } 
+
+      /*mobile menu background color*/
+      #menu-style .mobilemenu li a
+        {
+           background-color: #ffffff;
+           color: #000;
+        }
+
+        #menu-style .mobilemenu li a:hover{
+           background-color: #ccbe00;
+        }
+
+        #menu-style .mobilemenu li:hover > a{
+           background-color: #67CAEF !important;
+        }       
+
+        #menu-style .submenu-button::before, #menu-style .submenu-button::after {
+           background-color: #000;
+        }    
+
+      } 
+@media all and (min-width: 1024px) {  
+    #menu-style .mobilemenu {
+        margin-top: 0px;
+    }
+}
+
+
