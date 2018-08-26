@@ -26,6 +26,22 @@ $hide_credit_links = get_theme_mod('hideCreditLinks'); ?>
         <?php endif; ?>
     </footer>
 <?php wp_footer(); ?>
-
+<script>
+	// for headroom, sliding header
+	// grab an element
+var elem = jQuery('.header-top.transparent.fixed-header');
+var headroom = new Headroom(elem, {
+  "tolerance": 5,
+  "offset": 10,
+  "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp",
+    "top": "headroom--top",
+    "notTop": "headroom--not-top"
+  }
+});
+headroom.init(); </script>
+</script>
 </body>
 </html>

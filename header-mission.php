@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />   
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
+    <script src="/eh/wp-content/themes/ephraimshouse/headroom.min.js"></script>
+
+
 </head>
 <body <?php body_class();?>> 
     <?php if(get_theme_mod('preloader') != 2) :
