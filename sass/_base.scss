@@ -17,9 +17,11 @@ $black: 800;
 
 
 blockquote {
-  font-family: $pacifico;
-  color: $teal;
-  font-size: 36px;
-  line-height: 54px;
-  border: none;
+	&, p {
+	  font-family: $pacifico;
+	  color: $teal;
+	  font-size: 36px;
+	  line-height: 54px;
+	  border: none;		
+	}
 }

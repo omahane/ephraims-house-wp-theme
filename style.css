@@ -8,14 +8,12 @@ Version: 1.0
 */
 /* Parent Theme */
 @import url("../college-education/style.css");
-@import url("headroom.css");
-@import url("animate.css");
 /* Bootstrap SASS */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:600,700,800");
-/* line 19, sass/_base.scss */
-blockquote {
+/* line 20, sass/_base.scss */
+blockquote, blockquote p {
   font-family: Pacifico, cursive;
   color: #1287B2;
   font-size: 36px;
@@ -349,4 +347,31 @@ body.page-template-mission-style .program.panel-row-style a:after {
 /* line 12, sass/_gallery.scss */
 .square-gallery .gallery .gallery-item img.attachment-thumbnail.size-thumbnail {
   min-width: 200px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 2, sass/_mobile_overrides.scss */
+  .panel-grid-cell {
+    width: 100%;
+  }
+
+  /* line 6, sass/_mobile_overrides.scss */
+  body.page-template-mission-style .checker.panel-row-style .panel-grid-cell, body.page-template-mission-style .checker.panel-row-style .panel-grid-cell .widget_sow-editor {
+    width: 100% !important;
+  }
+
+  /* line 10, sass/_mobile_overrides.scss */
+  .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h1 {
+    font-size: 36px !important;
+  }
+
+  /* line 13, sass/_mobile_overrides.scss */
+  .sow-headline-container h3.sow-headline {
+    font-size: 24px !important;
+  }
+
+  /* line 16, sass/_mobile_overrides.scss */
+  img.custom-logo {
+    max-height: 45px !important;
+  }
 }

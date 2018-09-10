@@ -1,0 +1,19 @@
+@media all and (max-width: 768px) {
+    .panel-grid-cell {
+        width: 100%
+    }
+    body.page-template-mission-style .checker.panel-row-style .panel-grid-cell {
+	    &, .widget_sow-editor {
+	         width: 100% !important;
+	    }
+    }
+    .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h1 {
+        font-size: 36px !important;
+    }
+    .sow-headline-container h3.sow-headline {
+        font-size: 24px !important;
+    }
+    img.custom-logo {
+  		max-height:45px !important;
+  	}
+}
