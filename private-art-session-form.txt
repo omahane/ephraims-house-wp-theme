@@ -1,0 +1,91 @@
+<h2>Participant Information</h2>
+
+<div class="form-group">
+<label> First Name (required)
+    [text first-name class:form-control] </label>
+</div>
+
+<div class="form-group">
+<label> Last Name (required)
+    [text last-name class:form-control] </label>
+</div>
+
+
+<div class="form-check">
+<label class="form-check-label">Gender</label>
+[radio radio-gender class:form-check-input use_label_element "Female" "Male"]
+</div>
+
+
+<label> Age
+[number age] </label>
+
+<label> Home Address
+    [text address] </label>
+
+<label> City
+    [text city] </label>
+
+State
+[select state use_label_element include_blank "Alabama " "Alaska " "Arizona " "Arkansas " "California " "Colorado " "Connecticut " "Delaware " "Florida " "Georgia " "Hawaii " "Idaho " "Illinois " "Indiana " "Iowa " "Kansas " "Kentucky " "Louisiana " "Maine " "Maryland " "Massachusetts " "Michigan " "Minnesota " "Mississippi " "Missouri " "Montana " "Nebraska " "Nevada " "New Hampshire " "New Jersey " "New Mexico " "New York " "North Carolina " "North Dakota " "Ohio " "Oklahoma " "Oregon " "Pennsylvania " "Rhode Island " "South Carolina " "South Dakota " "Tennessee " "Texas " "Utah " "Vermont " "Virginia " "Washington " "West Virginia " "Wisconsin " "Wyoming"]
+
+
+<label> ZIP Code
+    [text zip] </label>
+
+
+<h2>Parent/Guardian Information</h2>
+
+<label> First Name (required)
+    [text* first-name-parent] </label>
+
+<label> Last Name (required)
+    [text last-name-parent] </label>
+
+<label> Telephone
+[tel tel-361 placeholder "123-456-7890"] </label>
+
+<label> Email
+    [email email-parent] </label>
+
+<div class="form-check">
+<label class="form-check-label">Preferred Method of Contact</label>
+[radio radio-contact-method class:form-check-input use_label_element "Phone" "Email"]
+</div>
+
+<div class="form-check">
+<label class="form-check-label">Best Time to Contact</label>
+[radio radio-contact-time class:form-check-input use_label_element "Morning" "Afternoon" "Evening"]
+</div>
+
+<h2>Additional Information</h2>
+
+<label> Name of Emergency Contact 
+    [text emergency-contact] </label>
+
+<label> Telephone
+[tel tel-emergency placeholder "123-456-7890"] </label>
+
+<label> Known Allergies or Medical Conditions to note
+[textarea textarea-medical] </label> 
+
+<h2>Session Information</h2>
+
+<div class="form-check">
+<label class="form-check-label">Group Session</label>
+[radio radio-group-session class:form-check-input use_label_element "Apprentice (2 hours)" "Studio (6 hours)"]
+</div>
+
+<label> Estimated Number of Participants
+[number participant-number] </label>
+
+<hr>
+<div class="form-check">
+<label class="form-check-label">Private Sessions</label>
+[radio radio-private-session class:form-check-input use_label_element "Novice (2 Hours)" "Dreamer (4 Hours)" "Expert (6 Hours)" "Master (10 Hours)"]
+</div>
+
+<p>I hereby state that (participant name) [text participant-name-health maxlength:90 size:50] is in good mental and physical condition to participate in the activities provided by Ephraim’s House Community Art Center including, but not limited to, all aspects of the visual arts (i.e. using scissors, glue, paint, clay etc.). I am fully aware that any activities, though not inherently physical in nature, have risks, and I hereby release Ephraim’s House Community Art Center, its employee and its staff from liability to the above named student. I understand that Ephraim’s House is not responsible for lost, damaged or stolen property or belongings.
+</p>
+[submit "Send"]
+</div>

@@ -37,11 +37,18 @@
 	h4 {
 		font-family: Oxygen, sans-serif;	
 		color: #ffffff;
+		font-size: 20px;
+		font-weight: 900;
 	}
 }
 .header-top.fixed-header .logo h4{
 	color: #000000;
 }
+#menu-style > ul > li > a {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	}
 
 
 /* featured image */

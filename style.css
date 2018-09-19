@@ -71,21 +71,30 @@ blockquote, blockquote p {
 .header-top .logo h4 {
   font-family: Oxygen, sans-serif;
   color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
 }
 
-/* line 42, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .header-top.fixed-header .logo h4 {
   color: #000000;
 }
 
+/* line 47, sass/_header.scss */
+#menu-style > ul > li > a {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 /* featured image */
-/* line 48, sass/_header.scss */
+/* line 55, sass/_header.scss */
 .featured-image {
   position: absolute;
   margin-bottom: 1040px;
 }
 
-/* line 53, sass/_header.scss */
+/* line 60, sass/_header.scss */
 #featured-image-headline, .header-style blockquote {
   position: absolute;
   top: 140px;
@@ -99,7 +108,7 @@ blockquote, blockquote p {
   text-align: center;
 }
 
-/* line 66, sass/_header.scss */
+/* line 73, sass/_header.scss */
 #featured-image-quote {
   position: absolute;
   top: 1000px;
@@ -109,7 +118,7 @@ blockquote, blockquote p {
   text-align: center;
 }
 
-/* line 75, sass/_header.scss */
+/* line 82, sass/_header.scss */
 #featured-image-author {
   position: absolute;
   top: 1040px;
@@ -119,103 +128,136 @@ blockquote, blockquote p {
   text-align: center;
 }
 
-/* line 83, sass/_header.scss */
+/* line 90, sass/_header.scss */
 #featured-image-author:before, #featured-image-author:after {
   content: ' ~ ';
 }
 
-/* line 87, sass/_header.scss */
+/* line 94, sass/_header.scss */
 .header-style blockquote {
   font-size: 55px;
   padding: 130px 0 60px;
   line-height: 70px;
 }
 
-/* line 93, sass/_header.scss */
+/* line 100, sass/_header.scss */
 img.custom-logo {
   max-height: 90px !important;
 }
 
-/* line 96, sass/_header.scss */
+/* line 103, sass/_header.scss */
 .footer-box .footer-widget ul li a, .footer-widget .tagcloud a {
   color: #ffffff !important;
   background-color: #67CAEF !important;
 }
 
-/* line 100, sass/_header.scss */
+/* line 107, sass/_header.scss */
 .footer-box .footer-widget ul li a:hover, .footer-widget .tagcloud a:hover {
   color: #ffffff !important;
   background-color: #67CAEF !important;
 }
 
-/* line 104, sass/_header.scss */
+/* line 111, sass/_header.scss */
 #menu-style ul ul li a:hover {
   background-color: #67CAEF !important;
 }
 
-/* line 107, sass/_header.scss */
+/* line 114, sass/_header.scss */
 #menu-style > ul > li::before, #menu-style > ul > li::after {
   border-color: #ffffff !important;
 }
 
 @media only screen and (max-width: 1024px) {
   /*all menu arrow border color*/
-  /* line 113, sass/_header.scss */
+  /* line 120, sass/_header.scss */
   #menu-style #menu-button::before, #menu-style .menu-opened::after {
     border-color: #ffffff;
   }
 
-  /* line 117, sass/_header.scss */
+  /* line 124, sass/_header.scss */
   #menu-style > ul > li::before, #menu-style > ul > li::after {
     border-color: #ffffff;
   }
 
   /*all menu scroll arrow border color*/
-  /* line 122, sass/_header.scss */
+  /* line 129, sass/_header.scss */
   .fixed-header #menu-style #menu-button::before, .fixed-header #menu-style .menu-opened::after {
     border-color: #000;
   }
 
   /*all menu arrow background border color*/
-  /* line 127, sass/_header.scss */
+  /* line 134, sass/_header.scss */
   #menu-style #menu-button::after {
     background-color: #ffffff;
   }
 
   /*all menu scroll arrow background border color*/
-  /* line 132, sass/_header.scss */
+  /* line 139, sass/_header.scss */
   .fixed-header #menu-style #menu-button::after {
     background-color: #000;
   }
 
   /*mobile menu background color*/
-  /* line 137, sass/_header.scss */
+  /* line 144, sass/_header.scss */
   #menu-style .mobilemenu li a {
     background-color: #ffffff;
     color: #000;
   }
 
-  /* line 143, sass/_header.scss */
+  /* line 150, sass/_header.scss */
   #menu-style .mobilemenu li a:hover {
     background-color: #ffffff;
   }
 
-  /* line 147, sass/_header.scss */
+  /* line 154, sass/_header.scss */
   #menu-style .mobilemenu li:hover > a {
     background-color: #67CAEF !important;
   }
 
-  /* line 151, sass/_header.scss */
+  /* line 158, sass/_header.scss */
   #menu-style .submenu-button::before, #menu-style .submenu-button::after {
     background-color: #000;
   }
 }
 @media all and (min-width: 1024px) {
-  /* line 157, sass/_header.scss */
+  /* line 164, sass/_header.scss */
   #menu-style .mobilemenu {
     margin-top: 0px;
   }
 }
+/* line 2, sass/_footer.scss */
+.footer-box div, .footer-box p, .footer-box .textwidget p {
+  color: black !important;
+}
+
+/* line 2, sass/_form.scss */
+div[role=form] span.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 8, sass/_form.scss */
+span.form-check-input {
+  display: flex;
+  flex-direction: column;
+}
+/* line 12, sass/_form.scss */
+span.form-check-input label {
+  display: flex;
+  align-items: center;
+}
+/* line 16, sass/_form.scss */
+span.form-check-input label input[type="checkbox"] {
+  margin: 0 4px 0 0;
+  font-size: 2em;
+}
+/* line 20, sass/_form.scss */
+span.form-check-input label input[type="radio"] {
+  width: 24px;
+  margin-right: 5px;
+  font-size: 2em;
+}
+
 /* line 5, sass/_template-mission-style.scss */
 body.page-template-mission-style .blog-article {
   padding-top: 0;
