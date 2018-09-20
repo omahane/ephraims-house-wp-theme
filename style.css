@@ -259,7 +259,7 @@ span.form-check-input label input[type="radio"] {
 }
 
 /* line 28, sass/_form.scss */
-btn {
+.btn {
   font-size: 20px;
 }
 
