@@ -1,0 +1,87 @@
+Participant Information
+
+First Name
+[first-name] 
+
+Last Name (required)
+[last-name] 
+
+Gender
+[checkbox-gender]
+
+Age
+[age] 
+
+Home Address
+[address] 
+
+City
+[city] 
+
+State
+[state]
+
+ZIP Code
+[zip] 
+
+
+Parent/Guardian Information
+
+First Name
+[first-name-parent] 
+
+Last Name
+[last-name-parent] 
+
+Telephone
+[tel-361] 
+
+Email
+[email-parent] 
+
+Preferred Method of Contact
+[checkbox-contact-method]
+
+Best Time to Contact
+[checkbox-contact-time]
+
+
+Additional Information
+
+Name of Emergency Contact 
+[emergency-contact] 
+
+Telephone
+[tel-emergency] 
+
+Known Allergies or Medical Conditions to note
+[textarea-medical]  
+
+
+Session Information
+Group Session
+[checkbox-group-session]
+
+Estimated Number of Participants
+[participant-number] 
+
+Private Sessions
+[checkbox-private-session]
+
+I hereby state that (participant name) [participant-name-health] is in good mental and physical condition to participate in the activities provided by Ephraim’s House Community Art Center including, but not limited to, all aspects of the visual arts (i.e. using scissors, glue, paint, clay etc.). I am fully aware that any activities, though not inherently physical in nature, have risks, and I hereby release Ephraim’s House Community Art Center, its employee and its staff from liability to the above named student. I understand that Ephraim’s House is not responsible for lost, damaged or stolen property or belongings.
+
+Signature of parent/guardian 
+[signature-parent] 
+
+Date 
+[date-signature] 
+
+Photo Release
+I hereby give permission to Ephraim’s House Community Art Center to photograph and/or record the participant for educational or promotional purposes.
+
+Initials 
+[initials] 
+
+Date 
+[date-photo-release] 
+

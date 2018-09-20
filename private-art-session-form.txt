@@ -13,79 +13,128 @@
 
 <div class="form-check">
 <label class="form-check-label">Gender</label>
-[radio radio-gender class:form-check-input use_label_element "Female" "Male"]
+[checkbox checkbox-gender exclusive class:form-check-input use_label_element "Female" "Male"]
 </div>
 
-
+<div class="form-group">
 <label> Age
-[number age] </label>
+[number age class:form-control] </label>
+</div>
 
+<div class="form-group">
 <label> Home Address
-    [text address] </label>
+    [text address class:form-control] </label>
+</div>
 
+<div class="form-group">
 <label> City
-    [text city] </label>
+    [text city class:form-control] </label>
+</div>
 
+<div class="form-group">
 State
-[select state use_label_element include_blank "Alabama " "Alaska " "Arizona " "Arkansas " "California " "Colorado " "Connecticut " "Delaware " "Florida " "Georgia " "Hawaii " "Idaho " "Illinois " "Indiana " "Iowa " "Kansas " "Kentucky " "Louisiana " "Maine " "Maryland " "Massachusetts " "Michigan " "Minnesota " "Mississippi " "Missouri " "Montana " "Nebraska " "Nevada " "New Hampshire " "New Jersey " "New Mexico " "New York " "North Carolina " "North Dakota " "Ohio " "Oklahoma " "Oregon " "Pennsylvania " "Rhode Island " "South Carolina " "South Dakota " "Tennessee " "Texas " "Utah " "Vermont " "Virginia " "Washington " "West Virginia " "Wisconsin " "Wyoming"]
+[select state use_label_element include_blank  "Alabama " "Alaska " "Arizona " "Arkansas " "California " "Colorado " "Connecticut " "Delaware " "Florida " "Georgia " "Hawaii " "Idaho " "Illinois " "Indiana " "Iowa " "Kansas " "Kentucky " "Louisiana " "Maine " "Maryland " "Massachusetts " "Michigan " "Minnesota " "Mississippi " "Missouri " "Montana " "Nebraska " "Nevada " "New Hampshire " "New Jersey " "New Mexico " "New York " "North Carolina " "North Dakota " "Ohio " "Oklahoma " "Oregon " "Pennsylvania " "Rhode Island " "South Carolina " "South Dakota " "Tennessee " "Texas " "Utah " "Vermont " "Virginia " "Washington " "West Virginia " "Wisconsin " "Wyoming"]
+</div>
 
-
+<div class="form-group">
 <label> ZIP Code
-    [text zip] </label>
-
+    [text zip class:form-control] </label>
+</div>
 
 <h2>Parent/Guardian Information</h2>
 
+<div class="form-group">
 <label> First Name (required)
-    [text* first-name-parent] </label>
+    [text* first-name-parent class:form-control] </label>
+</div>
 
+<div class="form-group">
 <label> Last Name (required)
-    [text last-name-parent] </label>
+    [text* last-name-parent class:form-control] </label>
+</div>
 
+<div class="form-group">
 <label> Telephone
-[tel tel-361 placeholder "123-456-7890"] </label>
+[tel tel-361 class:form-control placeholder "123-456-7890"] </label>
+</div>
 
+<div class="form-group">
 <label> Email
-    [email email-parent] </label>
+    [email* email-parent class:form-control] </label>
+</div>
 
 <div class="form-check">
 <label class="form-check-label">Preferred Method of Contact</label>
-[radio radio-contact-method class:form-check-input use_label_element "Phone" "Email"]
+[checkbox checkbox-contact-method exclusive class:form-check-input use_label_element "Phone" "Email"]
 </div>
 
 <div class="form-check">
 <label class="form-check-label">Best Time to Contact</label>
-[radio radio-contact-time class:form-check-input use_label_element "Morning" "Afternoon" "Evening"]
+[checkbox checkbox-contact-time exclusive class:form-check-input use_label_element "Morning" "Afternoon" "Evening"]
 </div>
 
 <h2>Additional Information</h2>
 
+<div class="form-group">
 <label> Name of Emergency Contact 
-    [text emergency-contact] </label>
+    [text emergency-contact class:form-control] </label>
+</div>
 
+<div class="form-group">
 <label> Telephone
-[tel tel-emergency placeholder "123-456-7890"] </label>
+[tel tel-emergency class:form-control placeholder "123-456-7890"] </label>
+</div>
 
+<div class="form-group">
 <label> Known Allergies or Medical Conditions to note
-[textarea textarea-medical] </label> 
+[textarea textarea-medical class:form-control] </label> 
+</div>
 
 <h2>Session Information</h2>
 
 <div class="form-check">
 <label class="form-check-label">Group Session</label>
-[radio radio-group-session class:form-check-input use_label_element "Apprentice (2 hours)" "Studio (6 hours)"]
+[checkbox checkbox-group-session exclusive class:form-check-input use_label_element "Apprentice (2 hours)" "Studio (6 hours)"]
 </div>
 
+<div class="form-check">
 <label> Estimated Number of Participants
-[number participant-number] </label>
+[number participant-number class:form-control] </label>
+</div>
 
 <hr>
+
 <div class="form-check">
 <label class="form-check-label">Private Sessions</label>
-[radio radio-private-session class:form-check-input use_label_element "Novice (2 Hours)" "Dreamer (4 Hours)" "Expert (6 Hours)" "Master (10 Hours)"]
+[checkbox checkbox-private-session exclusive class:form-check-input use_label_element "Novice (2 Hours)" "Dreamer (4 Hours)" "Expert (6 Hours)" "Master (10 Hours)"]
 </div>
 
 <p>I hereby state that (participant name) [text participant-name-health maxlength:90 size:50] is in good mental and physical condition to participate in the activities provided by Ephraim’s House Community Art Center including, but not limited to, all aspects of the visual arts (i.e. using scissors, glue, paint, clay etc.). I am fully aware that any activities, though not inherently physical in nature, have risks, and I hereby release Ephraim’s House Community Art Center, its employee and its staff from liability to the above named student. I understand that Ephraim’s House is not responsible for lost, damaged or stolen property or belongings.
 </p>
-[submit "Send"]
+
+
+<div class="form-group">
+<label> Signature of parent/guardian 
+    [text signature-parent class:form-control] </label>
 </div>
+
+<div class="form-group">
+<label> Date 
+    [text date-signature class:form-control] </label>
+</div>
+
+
+<h2>Photo Release (Optional)</h2>
+<p>I hereby give permission to Ephraim’s House Community Art Center to photograph and/or record the participant for educational or promotional purposes.</p>
+
+<div class="form-group">
+<label> Initials 
+    [text initials class:form-control size:5] </label>
+</div>
+
+<div class="form-group">
+<label> Date 
+    [text date-photo-release class:form-control] </label>
+</div>
+
+[submit class:btn class:btn-primary  id:form-submit "Sign Up"]

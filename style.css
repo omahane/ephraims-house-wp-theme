@@ -258,6 +258,11 @@ span.form-check-input label input[type="radio"] {
   font-size: 2em;
 }
 
+/* line 28, sass/_form.scss */
+btn {
+  font-size: 20px;
+}
+
 /* line 5, sass/_template-mission-style.scss */
 body.page-template-mission-style .blog-article {
   padding-top: 0;
