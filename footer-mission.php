@@ -83,21 +83,6 @@ function revealQuote(txtShow, txtTarg) {
 
 
 </script>
-<script>
-	// for headroom, sliding header
-	// grab an element
-var elem = jQuery('.header-top.transparent.fixed-header');
-var headroom = new Headroom(elem, {
-  "tolerance": 5,
-  "offset": 10,
-  "classes": {
-    "initial": "animated",
-    "pinned": "slideDown",
-    "unpinned": "slideUp",
-    "top": "headroom--top",
-    "notTop": "headroom--not-top"
-  }
-});
-headroom.init(); </script>
+
 </body>
 </html>

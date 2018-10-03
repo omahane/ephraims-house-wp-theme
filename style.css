@@ -71,7 +71,7 @@ blockquote, blockquote p {
 .header-top .logo h4 {
   font-family: Oxygen, sans-serif;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -82,7 +82,7 @@ blockquote, blockquote p {
 
 /* line 47, sass/_header.scss */
 #menu-style > ul > li > a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
 }

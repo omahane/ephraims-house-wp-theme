@@ -1,87 +1,87 @@
-Participant Information
-
-First Name
-[first-name] 
-
-Last Name (required)
-[last-name] 
-
-Gender
-[checkbox-gender]
-
-Age
-[age] 
-
-Home Address
-[address] 
-
-City
-[city] 
-
-State
-[state]
-
-ZIP Code
-[zip] 
-
-
-Parent/Guardian Information
-
-First Name
-[first-name-parent] 
-
-Last Name
-[last-name-parent] 
-
-Telephone
-[tel-361] 
-
-Email
-[email-parent] 
-
-Preferred Method of Contact
-[checkbox-contact-method]
-
-Best Time to Contact
-[checkbox-contact-time]
-
-
-Additional Information
-
-Name of Emergency Contact 
-[emergency-contact] 
-
-Telephone
-[tel-emergency] 
-
-Known Allergies or Medical Conditions to note
-[textarea-medical]  
-
-
-Session Information
-Group Session
-[checkbox-group-session]
-
-Estimated Number of Participants
-[participant-number] 
-
-Private Sessions
-[checkbox-private-session]
-
-I hereby state that (participant name) [participant-name-health] is in good mental and physical condition to participate in the activities provided by Ephraim’s House Community Art Center including, but not limited to, all aspects of the visual arts (i.e. using scissors, glue, paint, clay etc.). I am fully aware that any activities, though not inherently physical in nature, have risks, and I hereby release Ephraim’s House Community Art Center, its employee and its staff from liability to the above named student. I understand that Ephraim’s House is not responsible for lost, damaged or stolen property or belongings.
-
-Signature of parent/guardian 
-[signature-parent] 
-
-Date 
-[date-signature] 
-
-Photo Release
-I hereby give permission to Ephraim’s House Community Art Center to photograph and/or record the participant for educational or promotional purposes.
-
-Initials 
-[initials] 
-
-Date 
-[date-photo-release] 
-
+<table>
+	<tr >
+		<td style="width:48%"><h2>Participant Information</h2></td>
+		<td style="background-color: grey">
+		</td>
+		<td style="width:48%"><h2>Parent/Guardian Information</h2></td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><strong>First Name:</strong> [first-name]<br>
+			<strong>Last Name:</strong> [last-name]<br>
+			<strong>Gender:</strong> [checkbox-gender]<br>
+			<strong>Age:</strong> [age]<br>
+			<br>
+			<strong>Home Address</strong><br>
+			[address] <br>
+			[city], [state] [zip] 
+		</td>
+		<td style="background-color: grey">
+		</td>
+		<td style="vertical-align:top"><strong>First Name:</strong> [first-name-parent]<br> 
+			<strong>Last Name:</strong> [last-name-parent]<br>
+			<strong>Telephone:</strong> [tel-361]<br>
+			<strong>Email:</strong> [email-parent]<br>
+			<strong>Preferred Method of Contact:</strong> [checkbox-contact-method]<br>
+			<strong>Best Time to Contact:</strong> [checkbox-contact-time]
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: grey">
+		</td>
+		<td style="background-color: grey">
+		</td>
+		<td  style="background-color: grey">
+		</td>
+	</tr>
+	<tr>
+		<td><h2>Additional Information</h2></td>
+		<td style="background-color: grey">
+		</td>
+		<td><h2>Session Information</h2></td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><strong>Name of Emergency Contact:</strong> [emergency-contact] <br>
+			<strong>Telephone:</strong> [tel-emergency] <br>
+			<strong>Known Allergies or Medical Conditions to note:</strong><br>
+			[textarea-medical]  
+		</td>
+		<td style="background-color: grey">
+		</td>
+		<td style="vertical-align:top"><strong>Group Session:</strong> [checkbox-group-session]</br>
+			<strong>Estimated Number of Participants:</strong> [participant-number] </br>
+			</br>
+			<strong>Private Sessions:</strong> [checkbox-private-session]
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: grey">
+		</td>
+		<td style="background-color: grey">
+		</td>
+		<td  style="background-color: grey">
+		</td>
+	</tr>
+	<tr>
+		<td><h2>Physical Condition Statement</h2></td>
+		<td style="background-color: grey">
+		</td>
+		<td><h2>Photo Release</h2></td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top">
+			I hereby state that (participant name) <u>[participant-name-health]</u> is in good mental and physical condition to participate in the activities provided by Ephraim’s House Community Art Center including, but not limited to, all aspects of the visual arts (i.e. using scissors, glue, paint, clay etc.). I am fully aware that any activities, though not inherently physical in nature, have risks, and I hereby release Ephraim’s House Community Art Center, its employee and its staff from liability to the above named student. I understand that Ephraim’s House is not responsible for lost, damaged or stolen property or belongings.<br>
+<br>
+			<strong>Signature of parent/guardian:</strong> [signature-parent] <br>
+			<strong>Date:</strong> [date-signature] 
+		</td>
+		<td style="background-color: grey">
+		</td>
+		<td style="vertical-align:top"><strong>Photo Release</strong></br>
+			I hereby give permission to Ephraim’s House Community Art Center to photograph and/or record the participant for educational or promotional purposes.<br>
+			<br>
+			<strong>Initials:</strong> [initials]<br>
+			<strong>Date:</strong> [date-photo-release]
+		</td>
+	</tr>
+</table>
+		

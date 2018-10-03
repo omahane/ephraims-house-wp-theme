@@ -11,18 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />   
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
-    <script type="text/javascript">
-        function colorSpot(imgFile)
-        {
-            document.images.brain.src = imgFile;
-        }
-
-        function backToNormal( )
-        {
-            document.images.brain.src = "http://ephraims-house.local/wp-content/uploads/2018/06/adaptive-art-brain-600.png";
-        }
-    </script>
-</head>
+    </head>
 <body <?php body_class();?>> 
     <?php if(get_theme_mod('preloader') != 2) :
         if(get_theme_mod('customPreloader') == '') { ?>

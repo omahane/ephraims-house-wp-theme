@@ -137,4 +137,4 @@ State
     [text date-photo-release class:form-control] </label>
 </div>
 
-[submit class:btn class:btn-primary  id:form-submit "Sign Up"]
+<button id="submit" type="submit" class="btn icon wpcf7-form-control wpcf7-submit btn-primary">Sign Up</button>
